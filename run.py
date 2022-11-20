@@ -43,3 +43,41 @@ def prPurple(skk): print("\033[95m {}\033[00m" .format(skk))
 def prCyan(skk): print("\033[96m {}\033[00m" .format(skk))
 
 
+def print_board(board):
+
+    """
+    Creates a board with letters for the columns and numbers for the rows
+    """
+    print("  A B C D E F G H")
+    print("  ---------------")
+    row_number = 1
+    for row in board:
+        print(row_number, "|".join(row))
+        row_number += 1
+
+def create_ships(board):
+
+    """
+    Creates a random integer between 0 and 7 for ship_row and ship_column
+    Checks if "@" is already on the board, if so runs randomint until
+    there is an available space
+    When there is an available space update with "@"
+    """
+    for ship in range(5):
+        ship_row, ship_column = randint(0, 7), randint(0, 7)
+        while board[ship_row][ship_column] == "@":
+            ship_row, ship_column = randint(0, 7), randint(0, 7)
+        board[ship_row][ship_column] = "@"
+
+def computer_guess(board):
+    """
+    Creates a random integer between 0 and 7 for computer_row and
+    computer_column
+    Checks if "-" or "X" is already on the board, if so runs randomint until
+    there is an available space
+    If computer_row and computer_column is "@", prints message to user to say
+    their ship has been hit and updates board with "X"
+    Else the computer_row and computer_column finds a blank space, prints
+    message to the user to say the computer has missed and updates the
+    board with "-"
+    """
