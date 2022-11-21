@@ -114,4 +114,35 @@ def get_ship_location():
         print("Please enter a valid column")
         column = input("Please enter a ship column A-H\n").upper()
     return int(row) - 1, letters_to_numbers[column]
+  
+
+def validate_row(values):
+
+    try:
+        [int(value) for value in values]
+        if int(values) < 1 or int(values) > 8:
+            print(
+                f"Number between 1-8 required, you provided '{values}'."
+            )
+    except:
+        print(f"Sorry number between 1-8 required, please try again.\n")
+        return False
+
+    return True
+
+
+def validate_column(values):
+
+    try:
+        if values not in letters_to_numbers:
+            print(
+                f"Letter between A-H required, you provided '{values}'."
+                )
+    except:
+        print(f"Sorry letter between A-H required, please try again.\n")
+        return False
+
+    return True
+
+
 
