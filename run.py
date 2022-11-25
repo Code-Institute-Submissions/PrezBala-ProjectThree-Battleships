@@ -155,3 +155,45 @@ def count_hit_ships(board):
     return count
 
 
+def main():
+    """
+    Run all start up functions
+    """
+    create_ships(HIDDEN_BOARD)
+    # print hidden board for testing, needs removing before submission
+    # print("Hidden Board")
+    # print_board(HIDDEN_BOARD)
+    create_ships(USER_BOARD)
+    prGreen("""\
+______       _   _   _           _     _
+| ___ \     | | | | | |         | |   (_)
+| |_/ / __ _| |_| |_| | ___  ___| |__  _ _ __  ___
+| ___ \/ _` | __| __| |/ _ \/ __| '_ \| | '_ \/ __|
+| |_/ / (_| | |_| |_| |  __/\__ \ | | | | |_) \__ \.
+\____/ \__,_|\__|\__|_|\___||___/_| |_|_| .__/|___/
+                                        | |
+                                        |_|
+        """)
+    prCyan("""\
+                                  |__
+                                     |\/
+                                     ---
+                                     / | [
+                              !      | |||
+                            _/|     _/|-++'
+                        +  +--|    |--|--|_ |-
+                     { /|__|  |/\__|  |--- |||__/
+                    +---------------___[}-_===_.'____                 /\
+                ____`-' ||___-{]_| _[}-  |     |_[___\==--            \/   _
+ __..._____--==/___]_|__|_____________________________[___\==--____,------' .7
+|                                                                     BB-61/
+ \_________________________________________________________________________|
+        """)
+    print("Battleships")
+    print("You have 10 turns to find all of the battleships")
+    global username
+    username = input("Please enter your name:\n")
+    while username == "" or username == " ":
+        print("Sorry, please can you enter a name.")
+        username = input("Please enter your name:\n")
+
