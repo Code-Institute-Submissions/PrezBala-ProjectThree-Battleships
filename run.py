@@ -209,3 +209,7 @@ def validate_continue_playing(values):
         return False
 
     return True
+
+
+def run_game():
+    turns = 10
