@@ -197,3 +197,15 @@ ______       _   _   _           _     _
         print("Sorry, please can you enter a name.")
         username = input("Please enter your name:\n")
 
+def validate_continue_playing(values):
+
+    try:
+        if values not in continue_playing_options:
+            print(
+                f"Please enter y/n, you provided '{values}'."
+                )
+    except:
+        print(f"Sorry y/n required, please try again.\n")
+        return False
+
+    return True
