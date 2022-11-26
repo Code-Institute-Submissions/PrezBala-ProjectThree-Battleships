@@ -213,3 +213,14 @@ def validate_continue_playing(values):
 
 def run_game():
     turns = 10
+
+    global user_score
+
+    while turns > 0:
+        prGreen(f"{username}'s Board")
+        print_board(USER_BOARD)
+        prCyan("Computer's Board")
+        print_board(GUESS_BOARD)
+        row, column = get_ship_location()
+        if GUESS_BOARD[row][column] == "-" or GUESS_BOARD[row][column] == "X":
+            prRed("You have already guessed that")
