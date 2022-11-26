@@ -224,3 +224,14 @@ def run_game():
         row, column = get_ship_location()
         if GUESS_BOARD[row][column] == "-" or GUESS_BOARD[row][column] == "X":
             prRed("You have already guessed that")
+            elif HIDDEN_BOARD[row][column] == "@":
+            prGreen(f"Congratulations {username}, you have hit the battleship")
+            GUESS_BOARD[row][column] = "X"
+            turns -= 1
+            computer_guess(USER_BOARD)
+            user_score += 1
+        else:
+            prGreen(f"Sorry {username}, you missed")
+            GUESS_BOARD[row][column] = "-"
+            turns -= 1
+            computer_guess(USER_BOARD)
