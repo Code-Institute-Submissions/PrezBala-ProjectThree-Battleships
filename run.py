@@ -244,3 +244,14 @@ def run_game():
         prPurple("You have " + str(turns) + " turns remaining")
         prYellow(f"{username}'s Score: {user_score}"
                  f" Computer's Score: {computer_score}")
+
+            if turns == 0:
+            prGreen(
+                f"Sorry {username}, you ran out of turns, the game is over")
+            break
+        if count_hit_ships(USER_BOARD) == 5:
+            prGreen(
+                f"Sorry {username}, the computer"
+                " has sunk all of your battleships")
+            break
+                 
