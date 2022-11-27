@@ -254,4 +254,22 @@ def run_game():
                 f"Sorry {username}, the computer"
                 " has sunk all of your battleships")
             break
-                 
+                 if count_hit_ships(GUESS_BOARD) < 5:
+            continue_playing = input(
+                    "Do you want to continue playing? y/n\n").lower()
+            while continue_playing not in continue_playing_options:
+                validate_continue_playing(continue_playing)
+                continue_playing = input(
+                    "Do you want to continue playing? y/n\n").lower()
+            if continue_playing == "y" or continue_playing == "yes":
+                print(
+                    "You have decided to continue playing the game.")
+                continue
+            elif continue_playing == "n" or continue_playing == "no":
+                print(
+                    "You have decided to finish playing, the game is now over")
+                break
+            else:
+                print("Sorry, please can you enter y/n")
+                continue_playing = input(
+                    "Do you want to continue playing? y/n \n")
