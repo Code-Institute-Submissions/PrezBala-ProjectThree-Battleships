@@ -238,7 +238,7 @@ def run_game():
              if count_hit_ships(GUESS_BOARD) == 5:
             prGreen(
                 f"Congratulations {username}, "
-                "you have sunk all of the battleships")
+                "you have sunk all of their battleships!")
             print("The game is now over")
             break
         prPurple("You have " + str(turns) + " turns remaining")
@@ -273,3 +273,7 @@ def run_game():
                 print("Sorry, please can you enter y/n")
                 continue_playing = input(
                     "Do you want to continue playing? y/n \n")
+
+
+main()
+run_game()
