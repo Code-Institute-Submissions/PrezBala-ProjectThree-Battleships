@@ -28,6 +28,7 @@ continue_playing_options = ["y", "yes", "n", "no"]
 
 # Python program to print colored text and background
 
+
 def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
 
 
@@ -44,7 +45,7 @@ def prCyan(skk): print("\033[96m {}\033[00m" .format(skk))
 
 
 def print_board(board):
-    #letters for the columns and numbers for the rows
+    # letters for the columns and numbers for the rows
    
     print("  A B C D E F G H")
     print("  ---------------")
@@ -56,10 +57,10 @@ def print_board(board):
 
 def create_ships(board):
 
-    #Creates a random integer between 0 and 7 for ship_row and ship_column. Checks if "@" is already on the board, 
-    #if so runs randomint until there is an available space When there is an available space update with "@"
+    # Creates a random integer between 0 and 7 for ship_row/ ship_column. 
+    # Check if "@" is already on the board, 
 
-   for ship in range(5):
+    for ship in range(5):
         ship_row, ship_column = randint(0, 7), randint(0, 7)
         while board[ship_row][ship_column] == "@":
             ship_row, ship_column = randint(0, 7), randint(0, 7)
@@ -68,12 +69,13 @@ def create_ships(board):
 
 def computer_guess(board):
    
-    #Creates a random integer between 0 and 7 for computer_row and computer_column
-    #Checks if "-" or "X" is already on the board, if so runs randomint until there is an available space
-    #If computer_row and computer_column is "@", prints message to user to say
-    #their ship has been hit and updates board with "X"
-    #Else the computer_row and computer_column finds a blank space
-    #prints message to the user to say the computer has missed and updates the board with "-"
+    # Creates a random integer between 0 and 7 for computer_row/computer_column
+    # Checks if "-" or "X" is already on the board, 
+    # if so runs randomint until there is an available space
+    # If computer_row and computer_column is "@", prints message to user to say
+    # their ship has been hit and updates board with "X"
+    # Else the computer_row and computer_column finds a blank space
+    # prints message the computer has missed and updates the board with "-"
   
     global computer_score
     computer_row, computer_column = randint(0, 7), randint(0, 7)
@@ -98,8 +100,9 @@ def computer_guess(board):
 
 def get_ship_location():
 
-    #Requests user to provide guess for ship row / columns 
-    #Check for numerical value within row and alphabetical letters within column
+    # Requests user to provide guess for ship row / columns 
+    # Check for numerical value within row  
+    # Check for alphabetical letters within column
 
     row = input("Please enter a ship row 1-8\n")
     while row not in "12345678" or len(row) > 1 or row == "":
@@ -116,7 +119,7 @@ def get_ship_location():
 
 def validate_row(values):
 
-    #Error message to appear if number between 1 - 8 is not entered
+    # Error message to appear if number between 1 - 8 is not entered
 
     try:
         [int(value) for value in values]
@@ -133,7 +136,7 @@ def validate_row(values):
 
 def validate_column(values):
 
-    #Error message to appear if letter is not entered correctly
+    # Error message to appear if letter is not entered correctly
 
     try:
         if values not in letters_to_numbers:
@@ -149,7 +152,7 @@ def validate_column(values):
 
 def count_hit_ships(board):
 
-    #Total for number of ships that have been hit "X"
+    # Total for number of ships that have been hit "X"
 
     count = 0
     for row in board:
@@ -201,7 +204,7 @@ ______       _   _   _           _     _
 
 def validate_continue_playing(values):
 
-    #if value not entered error message to appear
+    # if value not entered error message to appear
 
     try:
         if values not in continue_playing_options:
@@ -217,7 +220,7 @@ def validate_continue_playing(values):
 
 def run_game():
 
-    #game starts with 10 turns, once counter reaches 0 the game is over.
+    # game starts with 10 turns, once counter reaches 0 the game is over.
 
     turns = 10
 
