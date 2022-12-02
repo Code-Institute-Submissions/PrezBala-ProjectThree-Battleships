@@ -1,9 +1,9 @@
 from random import randint
 
-# Legend
+# Legend below
 # "@" for placing ship
 # " " for available space
-# "X" for hit battleship
+# "X" for hitting battleship
 # "-" for missed shot
 
 HIDDEN_BOARD = [[" "] * 8 for x in range(8)]
@@ -26,7 +26,7 @@ computer_score = 0
 
 continue_playing_options = ["y", "yes", "n", "no"]
 
-# Python program to print colored text and background, code taken from Geeks for Geeks, see README
+# Python program to print colored text and background
 
 def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
 
@@ -44,10 +44,8 @@ def prCyan(skk): print("\033[96m {}\033[00m" .format(skk))
 
 
 def print_board(board):
-
-    """
-    Creates a board with letters for the columns and numbers for the rows
-    """
+    #letters for the columns and numbers for the rows
+   
     print("  A B C D E F G H")
     print("  ---------------")
     row_number = 1
@@ -55,32 +53,28 @@ def print_board(board):
         print(row_number, "|".join(row))
         row_number += 1
 
+
 def create_ships(board):
 
-    """
-    Creates a random integer between 0 and 7 for ship_row and ship_column
-    Checks if "@" is already on the board, if so runs randomint until
-    there is an available space
-    When there is an available space update with "@"
-    """
-    for ship in range(5):
+    #Creates a random integer between 0 and 7 for ship_row and ship_column. Checks if "@" is already on the board, 
+    #if so runs randomint until there is an available space When there is an available space update with "@"
+
+   for ship in range(5):
         ship_row, ship_column = randint(0, 7), randint(0, 7)
         while board[ship_row][ship_column] == "@":
             ship_row, ship_column = randint(0, 7), randint(0, 7)
         board[ship_row][ship_column] = "@"
 
+
 def computer_guess(board):
-    """
-    Creates a random integer between 0 and 7 for computer_row and
-    computer_column
-    Checks if "-" or "X" is already on the board, if so runs randomint until
-    there is an available space
-    If computer_row and computer_column is "@", prints message to user to say
-    their ship has been hit and updates board with "X"
-    Else the computer_row and computer_column finds a blank space, prints
-    message to the user to say the computer has missed and updates the
-    board with "-"
-    """
+   
+    #Creates a random integer between 0 and 7 for computer_row and computer_column
+    #Checks if "-" or "X" is already on the board, if so runs randomint until there is an available space
+    #If computer_row and computer_column is "@", prints message to user to say
+    #their ship has been hit and updates board with "X"
+    #Else the computer_row and computer_column finds a blank space
+    #prints message to the user to say the computer has missed and updates the board with "-"
+  
     global computer_score
     computer_row, computer_column = randint(0, 7), randint(0, 7)
     if (USER_BOARD[computer_row][computer_column] == "-" or
@@ -101,7 +95,11 @@ def computer_guess(board):
             f" and column {numbers_to_letters[computer_column]}")
         USER_BOARD[computer_row][computer_column] = "-"
 
+
 def get_ship_location():
+
+    #Requests user to provide guess for ship row / columns 
+    #Check for numerical value within row and alphabetical letters within column
 
     row = input("Please enter a ship row 1-8\n")
     while row not in "12345678" or len(row) > 1 or row == "":
@@ -118,6 +116,8 @@ def get_ship_location():
 
 def validate_row(values):
 
+    #Error message to appear if number between 1 - 8 is not entered
+
     try:
         [int(value) for value in values]
         if int(values) < 1 or int(values) > 8:
@@ -133,6 +133,8 @@ def validate_row(values):
 
 def validate_column(values):
 
+    #Error message to appear if letter is not entered correctly
+
     try:
         if values not in letters_to_numbers:
             print(
@@ -147,6 +149,8 @@ def validate_column(values):
 
 def count_hit_ships(board):
 
+    #Total for number of ships that have been hit "X"
+
     count = 0
     for row in board:
         for column in row:
@@ -156,9 +160,7 @@ def count_hit_ships(board):
 
 
 def main():
-    """
-    Run all start up functions
-    """
+
     create_ships(HIDDEN_BOARD)
     # print hidden board for testing, needs removing before submission
     # print("Hidden Board")
@@ -199,6 +201,8 @@ ______       _   _   _           _     _
 
 def validate_continue_playing(values):
 
+    #if value not entered error message to appear
+
     try:
         if values not in continue_playing_options:
             print(
@@ -212,6 +216,9 @@ def validate_continue_playing(values):
 
 
 def run_game():
+
+    #game starts with 10 turns, once counter reaches 0 the game is over.
+
     turns = 10
 
     global user_score
