@@ -46,7 +46,7 @@ def prCyan(skk): print("\033[96m {}\033[00m" .format(skk))
 
 def print_board(board):
     # letters for the columns and numbers for the rows
-   
+
     print("  A B C D E F G H")
     print("  ---------------")
     row_number = 1
@@ -57,8 +57,8 @@ def print_board(board):
 
 def create_ships(board):
 
-    # Creates a random integer between 0 and 7 for ship_row/ ship_column. 
-    # Check if "@" is already on the board, 
+    # Creates a random integer between 0 and 7 for ship_row/ ship_column.
+    # Check if "@" is already on the board.
 
     for ship in range(5):
         ship_row, ship_column = randint(0, 7), randint(0, 7)
@@ -68,15 +68,15 @@ def create_ships(board):
 
 
 def computer_guess(board):
-   
+
     # Creates a random integer between 0 and 7 for computer_row/computer_column
-    # Checks if "-" or "X" is already on the board, 
+    # Checks if "-" or "X" is already on the board
     # if so runs randomint until there is an available space
     # If computer_row and computer_column is "@", prints message to user to say
     # their ship has been hit and updates board with "X"
     # Else the computer_row and computer_column finds a blank space
     # prints message the computer has missed and updates the board with "-"
-  
+
     global computer_score
     computer_row, computer_column = randint(0, 7), randint(0, 7)
     if (USER_BOARD[computer_row][computer_column] == "-" or
@@ -100,8 +100,8 @@ def computer_guess(board):
 
 def get_ship_location():
 
-    # Requests user to provide guess for ship row / columns 
-    # Check for numerical value within row  
+    # Requests user to provide guess for ship row / columns
+    # Check for numerical value within row
     # Check for alphabetical letters within column
 
     row = input("Please enter a ship row 1-8\n")
@@ -115,7 +115,7 @@ def get_ship_location():
         print("Please enter a valid column")
         column = input("Please enter a ship column A-H\n").upper()
     return int(row) - 1, letters_to_numbers[column]
-  
+
 
 def validate_row(values):
 
@@ -127,7 +127,7 @@ def validate_row(values):
             print(
                 f"Number between 1-8 required, you provided '{values}'."
             )
-    except:
+    except User.DoesNotExist:
         print(f"Sorry number between 1-8 required, please try again.\n")
         return False
 
@@ -143,7 +143,7 @@ def validate_column(values):
             print(
                 f"Letter between A-H required, you provided '{values}'."
                 )
-    except:
+    except User.DoesNotExist:
         print(f"Sorry letter between A-H required, please try again.\n")
         return False
 
@@ -202,6 +202,7 @@ ______       _   _   _           _     _
         print("Sorry, please can you enter a name.")
         username = input("Please enter your name:\n")
 
+
 def validate_continue_playing(values):
 
     # if value not entered error message to appear
@@ -211,7 +212,7 @@ def validate_continue_playing(values):
             print(
                 f"Please enter y/n, you provided '{values}'."
                 )
-    except:
+    except User.DoesNotExist:
         print(f"Sorry y/n required, please try again.\n")
         return False
 
