@@ -273,17 +273,17 @@ def run_game():
                 continue_playing = input(
                     "Do you want to continue playing? y/n\n").lower()
         if continue_playing == "y" or continue_playing == "yes":
-                print(
+            print(
                     "You have decided to continue playing the game.")
-                continue
+            continue
         elif continue_playing == "n" or continue_playing == "no":
-                print(
-                    "You have decided to finish playing, the game is now over")
-                break
+            print(
+                "You have decided to finish playing, the game is now over")
+            break
         else:
-                print("Sorry, please can you enter y/n")
-                continue_playing = input(
-                    "Do you want to continue playing? y/n \n")
+            print("Sorry, please can you enter y/n")
+            continue_playing = input(
+                "Do you want to continue playing? y/n \n")
 
 
 main()
