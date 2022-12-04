@@ -2,7 +2,7 @@
 
 <img src= "https://github.com/PrezBala/ProjectTwo-Quiz/blob/main/assets/readmeimages/responsive.png">
 
-This project is based on the Battleship game which is a game that is very wildly know. This game is Python based game which runs within the Code Institite mock terminal within Heroku. The main purp[ose of the game is for the user to play against the computer and the user will have 10 turns to find all of their opponents ships before there ship gets destroyed. 
+This project is based on the Battleship game which is a game that is very widely know. This game is Python based game which runs within the Code Institite mock terminal within Heroku. The main purp[ose of the game is for the user to play against the computer and the user will have 10 turns to find all of their opponents ships before there ship gets destroyed. 
 
 [Live link to website](https://prezbala.github.io/ProjectTwo-Quiz/index.html)
 
@@ -12,7 +12,6 @@ This project is based on the Battleship game which is a game that is very wildly
 <!-- TOC start -->
 - [User Experience)](#ux-user-experience)
   * [Website Goal](#website-owner-business-goals)
-  * [User Goals](#user-goals)
   * [Wireframes](#wireframes)
 - [Features](#features)
     + [Common Elements](#common-elements)
@@ -44,15 +43,9 @@ This project is based on the Battleship game which is a game that is very wildly
 <hr>
 
 # UX (User Experience)
-## Website Owner Goals
+## Battle Ship game goals
 
-The main purpose for this is to engage the user in a fun quiz based on the Marvel franchise. Through a range of questions from each of the franchises movies this will eventually culminate to a score at the end, where the user can save there score against other players or to improve themselves.  
-
-## User Goals
-### First-time Users
-+ The user can easily identify the main purpose of the site through the headline title and named buttons
-+ The user can easily navigate to the high score page and see a list of there own score including other players too
-+ The user can select the rules button to open a pop up that will advise the user on what to do and also a brief history of Marvel Studios.
+The main purpose for this game is to engage the user in a fun battleships game against the computer. By being able to enter your name you can engage against the computer and be able to see your board clearly. The boards are randomly generated for every game that is played and actively updating showing where the guesses were made on the board. If the player hit one of the computers ships it will be marked "X" but if the player misses then "-" will be displayed. I've allowed 10 turns for the player to try and guess where all the ships for the computers are placed, otherwise it will be game over! 
 
 ## Wireframes
 The following image shows a wireframe of each of the 4 pages of the site. These wireframes were created using [MockPlus](https://user.mockplus.com/signin?next=https://app.mockplus.com/app).
