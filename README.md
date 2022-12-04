@@ -60,15 +60,22 @@ Mobile phone wire frame also shown below
 
 <hr>
 
-# Features
+# How the game works
 
-### Common Elements
-The common elements across all pages will be the background theme (Avengers - Iron man vs Captain America) and also the colour theme (Red,Blue and Green)
+Python based game where the user can challenge the computer in a match of Battleships.
 
-+ The Wallpaper - I decided to use the below wallpaper across all screens in this quiz site. Due to Marvel movie Civil War being one of the highest grossing movies and also a personal favourite. I find the image very strike with the traditional Marvel colours making it stand out.
-
-<img src="https://github.com/PrezBala/ProjectTwo-Quiz/blob/main/assets/readmeimages/marvelwallpaper.jpg">
-
+<ol>
+<li>When the game is loaded it will prompt the user with a greeting and ask for a user name with the ASCII art displaying above </li>
+<li>Once the user has entered there name the game will begin displaying both the user board and the computer board. On the users board the ships will be marked as '@'</li>
+<li>Players will have 10 guesses to hit the computers 5 ships, winner at the end of all the turns is the one with the most hit ships, if the player or computer hit all 5 ships first then they will be the winner.</li>
+<li>The question "Guess a battleship location" will appear with "Enter the row of the ship 1-6" input straight after, players will need to put a value between 1-6, after a valid input is put players will need to input a letter between A-F on the "Enter the column of the ship A-F" for another input</li>
+<li>After this is done computer will take a guess as well, both locations guessed by the computer and user will be processed, it will return a message stating whether the user hit, missed or guessed already, and will also state whether the computer hit or missed the users ship.
+If user already guessed the location the game will not continue until it enters a new location.</li>
+<li>After this is done, players will be asked if they wish to continue, if 'Y' the board with updated locations will be printed, if users enter 'N' then the game will exit instantly and state "GAME OVER"</li>
+<li>When the game continues the new board will be loaded with '~' for a missed target by either player, 'X' on the computers board if user hit the computers battleship and a '*' on players board if the computer hit a ship on the players board.</li>
+<li>User will need to guess a new location and this process will be repeated until player or computer hits all ships first, or if they run out of turns the player with the highest hit ship count will win!</li>
+<li>Game will state the winner and exit the game</li>
+</ol>
 
 ### Home Page
 This is the main landing page which the user will be first presented with, with big bold texts showcasing what the main function of the site is. By using a eye catching wallpaper and the Avengers themed colours i hope to keep users interested in viewing the site. This page contains the following elements below:
