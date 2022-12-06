@@ -65,12 +65,7 @@ players board if the computer hit a ship on the players board.</li>
 <li>Once all turns are complete the game will announce the winner within the message notification</li>
 </ol>
 
-### Home Page
-This is the main landing page which the user will be first presented with, with big bold texts showcasing what the main function of the site is. By using a eye catching wallpaper and the Avengers themed colours i hope to keep users interested in viewing the site. This page contains the following elements below:
-
-+ Home Screen - The image of 2 of the leading characters in the movie franchise in head to head combat is a very striking image for the user, i've also used the 3 colours signified for the Marvel franchise Blue,Red and Green which relates to the big 3 characters in the movies Captain America, Iron man and the Incredible Hulk.
-
-<img src="https://github.com/PrezBala/ProjectTwo-Quiz/blob/main/assets/readmeimages/homescreen.png">
+### Game basics and features
 
 + Audio Player - I've added a audio player beneath the 'Rules' button. When play is selected the Marvel intro theme will commence playing and the user can decide to pause or continue. I wanted to ensure that the music does not automatically play when the user first loads the site as i rather the user has control on this function (in case user is in a library or just doesn't want to listen to music!) 
 
