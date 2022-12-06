@@ -79,6 +79,8 @@ the opponents will be hidden until struck/missed in a turn.
 
 + Throughout the game it will maintain the same terminal appearence, showing both boards and updating accordingly whether the ship on either side per turn was hit or not. If hit a "X" will be marked and if missed "-" will be there instead.
 
+<img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/gamestart2.png">
+
 # Technologies Used / CREDITS
 
 + HTML - Hypertext markup language used to give the website its overall structure and semantic value.
