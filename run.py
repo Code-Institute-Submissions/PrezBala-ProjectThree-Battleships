@@ -60,7 +60,7 @@ def create_ships(board):
     # Creates a random integer between 0 and 7 for ship_row/ ship_column.
     # Check if "@" is already on the board.
 
-    for ship in range(5):
+    for ship in range(8):
         ship_row, ship_column = randint(0, 7), randint(0, 7)
         while board[ship_row][ship_column] == "@":
             ship_row, ship_column = randint(0, 7), randint(0, 7)
@@ -196,7 +196,7 @@ ______       _   _   _           _     _
  \_________________________________________________________________________|
         """)
     print("Battleships")
-    print("You have 10 turns to find all of the battleships")
+    print("You have 12 turns to find all of the battleships")
     global username
     username = input("Please enter your name:\n")
     while username == "" or username == " ":
@@ -222,9 +222,9 @@ def validate_continue_playing(values):
 
 def run_game():
 
-    # game starts with 10 turns, once counter reaches 0 the game is over.
+    # game starts with 12 turns, once counter reaches 0 the game is over.
 
-    turns = 10
+    turns = 12
 
     global user_score
 
@@ -247,7 +247,7 @@ def run_game():
             GUESS_BOARD[row][column] = "-"
             turns -= 1
             computer_guess(USER_BOARD)
-        if count_hit_ships(GUESS_BOARD) == 5:
+        if count_hit_ships(GUESS_BOARD) == 8:
             prGreen(
                 f"Congratulations {username}, "
                 "you have sunk all of their battleships!")
@@ -261,12 +261,12 @@ def run_game():
             prGreen(
                 f"Sorry {username}, you ran out of turns, the game is over")
             break
-        if count_hit_ships(USER_BOARD) == 5:
+        if count_hit_ships(USER_BOARD) == 8:
             prGreen(
                 f"Sorry {username}, the computer"
                 " has sunk all of your battleships")
             break
-        if count_hit_ships(GUESS_BOARD) < 5:
+        if count_hit_ships(GUESS_BOARD) < 8:
             continue_playing = input(
                     "Do you want to continue playing? y/n\n").lower()
             while continue_playing not in continue_playing_options:
