@@ -77,36 +77,7 @@ also input there name to continue.
 + Once the user name is entered the user will be presented with both their board and the computers board. The user will have full visibility of the location of their ships while
 the opponents will be hidden until struck/missed in a turn.
 
-### Play
-
-Once play is selected the page will update to the game.html page where the user can begin to answer questions and also keep track of there progress/score. I've also added a functionility for a music player  with a rotating image and playlist pop-up.
-
-<img src="https://github.com/PrezBala/ProjectTwo-Quiz/blob/main/assets/readmeimages/gamepage.png">
-
-I wanted to make the audio player for the game page to be more visually appealing and also to insert an image to reference the music that is playing i.e. Spiderman head for the spiderman theme, Ironman heads for Ironman 3 and also Avengers theme for the Avengers theme, the head also rotates which i thought would be fun to add. I added a function where the user can see a blue pop up appear with text imbedded so when the music starts playing, it shows what hero the theme refers to.
-
-<img src="https://github.com/PrezBala/ProjectTwo-Quiz/blob/main/assets/readmeimages/musicplayer.png">  
-
-Below when the play button is selected a pop up appears above showing the name and also the image within the music player rotates.
-
-<img src="https://github.com/PrezBala/ProjectTwo-Quiz/blob/main/assets/readmeimages/musicon.png">  
-
-### Correct Answer
-When the user selects the correct answer, the question will go green and then commence to the next screen. The score will increase by 100 and the progress bar will increase.
-
-<img src="https://github.com/PrezBala/ProjectTwo-Quiz/blob/main/assets/readmeimages/correct.png">
-
-### Incorrect Answer
-When the user selects the incorrect answer, the question will go red and then commence to the next screen. The score will remain at the figure it was prior to selection and the progress bar will increase.
-
-<img src="https://github.com/PrezBala/ProjectTwo-Quiz/blob/main/assets/readmeimages/incorrect.png">
-
-### Score and Question progress tracker
-The question progress bar will keep a value on what question the user is up to and also show a progression bar on how far the user is from completion. The score on the right side will show the user that each correct answer awards 100 points whereas incorrect answers award 0, the values update as the user progresses through.
-
-<img src="https://github.com/PrezBala/ProjectTwo-Quiz/blob/main/assets/readmeimages/questionscore.png">
-
-<hr>
++ Throughout the game it will maintain the same terminal appearence, showing both boards and updating accordingly whether the ship on either side per turn was hit or not. If hit a "X" will be marked and if missed "-" will be there instead.
 
 # Technologies Used / CREDITS
 
