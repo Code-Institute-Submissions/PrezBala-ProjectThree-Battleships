@@ -127,7 +127,7 @@ def validate_row(values):
             print(
                 f"Number between 1-8 required, you provided '{values}'."
             )
-    except User.DoesNotExist:
+    except:
         print(f"Sorry number between 1-8 required, please try again.\n")
         return False
 
@@ -143,7 +143,7 @@ def validate_column(values):
             print(
                 f"Letter between A-H required, you provided '{values}'."
                 )
-    except User.DoesNotExist:
+    except:
         print(f"Sorry letter between A-H required, please try again.\n")
         return False
 
@@ -213,7 +213,7 @@ def validate_continue_playing(values):
             print(
                 f"Please enter y/n, you provided '{values}'."
                 )
-    except User.DoesNotExist:
+    except:
         print(f"Sorry y/n required, please try again.\n")
         return False
 
