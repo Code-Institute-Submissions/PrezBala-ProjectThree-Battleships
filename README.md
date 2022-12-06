@@ -67,9 +67,15 @@ players board if the computer hit a ship on the players board.</li>
 
 ### Game basics and features
 
-+ Audio Player - I've added a audio player beneath the 'Rules' button. When play is selected the Marvel intro theme will commence playing and the user can decide to pause or continue. I wanted to ensure that the music does not automatically play when the user first loads the site as i rather the user has control on this function (in case user is in a library or just doesn't want to listen to music!) 
+<img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/gamestart1.png">
 
-<img src="https://github.com/PrezBala/ProjectTwo-Quiz/blob/main/assets/readmeimages/miniplayer.png">
++ When starting up the game the user will be presented with ASCII art and text showing a battleship with the title above. The user will be advised they have 12 turns and to 
+also input there name to continue.
+
+<img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/gamestart2.png">
+
++ Once the user name is entered the user will be presented with both their board and the computers board. The user will have full visibility of the location of their ships while
+the opponents will be hidden until struck/missed in a turn.
 
 ### Play
 
