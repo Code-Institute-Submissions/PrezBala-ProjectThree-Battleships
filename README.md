@@ -79,7 +79,14 @@ the opponents will be hidden until struck/missed in a turn.
 
 + Throughout the game it will maintain the same terminal appearence, showing both boards and updating accordingly whether the ship on either side per turn was hit or not. If hit a "X" will be marked and if missed "-" will be there instead.
 
-<img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/gamestart2.png">
+<img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/gamestart3.png">
+
++ The above board the user has entered 2A as a guess, which unfortunetly was a miss. The computer has also missed by guessing value 5G, the user will be notified
+how many turns they have remaining and also the total scores for both the user and the computer. The user will be requested if they wish to continue playing at the end of the turn.
+
+<img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/gamestart4.png">
+
++ The missed location will also be updated on the board once the user confirms to continue playing. A "-" symbol will appear on both the user and the computers board to indicate where the previous guess was made.
 
 # Technologies Used / CREDITS
 
