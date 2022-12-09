@@ -88,6 +88,18 @@ how many turns they have remaining and also the total scores for both the user a
 
 + The missed location will also be updated on the board once the user confirms to continue playing. A "-" symbol will appear on both the user and the computers board to indicate where the previous guess was made.
 
+# Error messages and validation check
+
+<img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/bareexceptfix.png">
+
++ User is advised to enter correct value within the parameters requested. User is notified with text "Sorry, number between 1 - 8 required, please try again"  and also
+letter between A-H required, you provided '5'" 
+
+<img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/alreadyguessed.png">
+
++ When the user re-enters the same values they've used before in a prvious turn they will be notified of this and this will not use up a turn. The user is given an option to continue playing and choose a different value or end the game.
+
+
 # Technologies Used / CREDITS
 
 + HTML - Hypertext markup language used to give the website its overall structure and semantic value.
