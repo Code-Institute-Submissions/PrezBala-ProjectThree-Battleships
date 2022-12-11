@@ -67,7 +67,7 @@ players board if the computer hit a ship on the players board.</li>
 
 <hr>
 
-### Game basics and features
+# Game basics and features
 
 <img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/gamestart1.png">
 
@@ -89,6 +89,10 @@ how many turns they have remaining and also the total scores for both the user a
 <img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/gamestart4.png">
 
 + The missed location will also be updated on the board once the user confirms to continue playing. A "-" symbol will appear on both the user and the computers board to indicate where the previous guess was made.
+
+<img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/stopplaying.png">
+
++ If the user decides at any point during the end of their turn that they wish to conclude playing they can type "n" for when asked if they wish to continue playing. Doing so will conclude the game.
 
 <hr>
 
