@@ -78,11 +78,11 @@ def computer_guess(board):
     # prints message the computer has missed and updates the board with "-"
 
     global computer_score
-    computer_row, computer_column = randint(0, 7), randint(0, 7)
+    computer_row, computer_column = randint(0, 8), randint(0, 8)
     if (USER_BOARD[computer_row][computer_column] == "-" or
             USER_BOARD[computer_row][computer_column] == "X"):
-        computer_row = randint(0, 7)
-        computer_column = randint(0, 7)
+        computer_row = randint(0, 8)
+        computer_column = randint(0, 8)
     elif USER_BOARD[computer_row][computer_column] == "@":
         prCyan(f"{username}, your battleship has been hit!")
         prCyan(
