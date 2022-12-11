@@ -122,14 +122,14 @@ After every turn the board will update and eventually the game will conclude and
 
 # PEP8 pip3 validator
 
-+ Due to pep8online.com being down as advised by my mentor i've used PEP8 validator within Gitpod Workspace, the steps i'vetaken are below.
+Due to pep8online.com being down as advised by my mentor i've used PEP8 validator within Gitpod Workspace, the steps i'vetaken are below.
 
-running the command pip3 install pycodestyle
-Run the command pip3 install pycodestyle
-press Ctrl+Shift+P 
-Type the word linter into the search bar that appears, and click on Python: Select Linter from the filtered results
-Select pycodestyle from the list 
-PEP8 errors appeared underlined in red, as well as being listed in the PROBLEMS tab.
++ running the command pip3 install pycodestyle
++ Run the command pip3 install pycodestyle
++ press Ctrl+Shift+P 
++ Type the word linter into the search bar that appears, and click on Python: Select Linter from the filtered results
++ Select pycodestyle from the list 
++ PEP8 errors appeared underlined in red, as well as being listed in the PROBLEMS tab.
 
 <img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/error4.png">
 
@@ -166,6 +166,9 @@ this is corrected and ran the game again using the run.py to check that both the
 + YouTube, codeacademy and knowledge mavens youtube channel to inspire with ideas and how to handle errors and validation, and for generating the board that was used for this game. I watched Mavens video several times and made notes as I was going along to break down each step and make the game my own by adding an additional board for the computer.
 + Python for beginners reddit page that provided several answers to any questions i had and also helped me as i can easily search through any similar queries other people had compared to mine.
 + Code institue for allowing me to use the template and being able to deploy it on the Heroku App.
++ The battleships text in ascii was created using an ascii generator found [here](https://patorjk.com/software/taag/#p=display&f=Doom&t=Battleships)
++ The battleship image in ascii was taken from [here](https://www.asciiart.eu/vehicles/navy)
+
 <hr>
 
 # Self Improvements
