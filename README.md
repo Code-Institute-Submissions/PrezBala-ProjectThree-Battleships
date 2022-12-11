@@ -158,8 +158,22 @@ this is corrected and ran the game again using the run.py to check that both the
 + Link the Heroku app to the repository
 + You can choose either automatic or manual deploy and select 'Deploy Branch'
 
-
-
 <hr>
+
+# Credits and Acknowledgments
+
++ My mentor Andre Aquilina who guided me in troubleshooting certain errors and providing links to certain articles that aided me in this project.
++ YouTube, codeacademy and knowledge mavens youtube channel to inspire with ideas and how to handle errors and validation, and for generating the board that was used for this game. I watched Mavens video several times and made notes as I was going along to break down each step and make the game my own by adding an additional board for the computer.
++ Python for beginners reddit page that provided several answers to any questions i had and also helped me as i can easily search through any similar queries other people had compared to mine.
++ Code institue for allowing me to use the template and being able to deploy it on the Heroku App.
+<hr>
+
+# Self Improvements
+
++ Allow the user to make changes to the board size, total number of ships and even place the ships at a location they would like.
++ Increase the size of the ship instead of it being 1x1
++ By adding bigger ships perhaps have a bigger score for hitting that.
++ Improve naming my functions and variables but will improve this in time by practicing by creating other games in my own time within Python.
+
 
 [Back to Table of Contents](https://github.com/PrezBala/ProjectThree-Battleships#table-of-contents) 
