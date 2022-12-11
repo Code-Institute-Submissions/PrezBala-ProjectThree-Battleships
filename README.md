@@ -1,10 +1,10 @@
 # Battleships - Project 3
 
-<img src= "https://github.com/PrezBala/ProjectTwo-Quiz/blob/main/assets/readmeimages/responsive.png">
+<img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/maincover.png">
 
 This project is based on the Battleship game which is a game that is very widely know. This game is Python based game which runs within the Code Institite mock terminal within Heroku. The main purp[ose of the game is for the user to play against the computer and the user will have 10 turns to find all of their opponents ships before there ship gets destroyed. 
 
-[Live link to website](https://prezbala.github.io/ProjectTwo-Quiz/index.html)
+[Live link to website](https://prasena-project-3-battleships.herokuapp.com/)
 
 <hr>
 
