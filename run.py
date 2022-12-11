@@ -69,7 +69,7 @@ def create_ships(board):
 
 def computer_guess(board):
 
-    # Creates a random integer between 0 and 7 for computer_row/computer_column
+    # Creates a random integer between 0 and 8 for computer_row/computer_column
     # Checks if "-" or "X" is already on the board
     # if so runs randomint until there is an available space
     # If computer_row and computer_column is "@", prints message to user to say
@@ -78,11 +78,11 @@ def computer_guess(board):
     # prints message the computer has missed and updates the board with "-"
 
     global computer_score
-    computer_row, computer_column = randint(0, 8), randint(0, 8)
+    computer_row, computer_column = randint(0, 7), randint(0, 7)
     if (USER_BOARD[computer_row][computer_column] == "-" or
             USER_BOARD[computer_row][computer_column] == "X"):
-        computer_row = randint(0, 8)
-        computer_column = randint(0, 8)
+        computer_row = randint(0, 7)
+        computer_column = randint(0, 7)
     elif USER_BOARD[computer_row][computer_column] == "@":
         prCyan(f"{username}, your battleship has been hit!")
         prCyan(
