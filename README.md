@@ -104,6 +104,15 @@ letter between A-H required, you provided '5'"
 + In the event that a user guesses the location of all 8 of the computers battleships, a message will appear and the game will conclude.
 I've increased the count of ships to 8 and also increased the turns to 12 from when i first created the functions for a higher chance for the user to win.
 
+# Data Model
+
+I've created 3 boards when initially setting up this game. A hidden board which will be used for testing purposes, this board shows the user all the locations of the computers ships so this will help figure out any bugs and also if my functions are working correctly when hitting / missing their ship. Guess board for the user to make their guesses on the computers ships and also the User board with the location of their own battleships. Initially i had a lower turn and ship count but found after testing myself it was quite difficult to win, so i've increased the total turn count to 12 and ships to 8.
+
+I've created the board with the dimensions Columns A-H and row 1-8. Each turn both the user and computer take guesses on the location of the other players ships, when a successful hit is made by either user or computer this will be marked on the board as 'X' the function def count_hit_ships(board) will ensure the score will increase by 1 . Once a turn is over the boards will be updated showing either a 'X' or '-' for both ships hit and those missed.  
+
+After every turn the board will update and eventually the game will conclude and both function if count_hit_ships(GUESS_BOARD) == 8:  and if count_hit_ships(USER_BOARD) == 8: will work to advise which player has won (if they managed to find all the battleships!)
+
+
 
 # Technologies Used / CREDITS
 
