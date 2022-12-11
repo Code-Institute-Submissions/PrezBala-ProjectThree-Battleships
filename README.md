@@ -88,7 +88,7 @@ how many turns they have remaining and also the total scores for both the user a
 
 + The missed location will also be updated on the board once the user confirms to continue playing. A "-" symbol will appear on both the user and the computers board to indicate where the previous guess was made.
 
-# Error messages and validation check
+# Game Errors 
 
 <img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/bareexceptfix.png">
 
@@ -111,6 +111,32 @@ I've created 3 boards when initially setting up this game. A hidden board which 
 I've created the board with the dimensions Columns A-H and row 1-8. Each turn both the user and computer take guesses on the location of the other players ships, when a successful hit is made by either user or computer this will be marked on the board as 'X' the function def count_hit_ships(board) will ensure the score will increase by 1 . Once a turn is over the boards will be updated showing either a 'X' or '-' for both ships hit and those missed.  
 
 After every turn the board will update and eventually the game will conclude and both function if count_hit_ships(GUESS_BOARD) == 8:  and if count_hit_ships(USER_BOARD) == 8: will work to advise which player has won (if they managed to find all the battleships!)
+
+# PEP8 pip3 validator
+
++ Due to pep8online.com being down as advised by my mentor i've used PEP8 validator within Gitpod Workspace, the steps i'vetaken are below.
+
+running the command pip3 install pycodestyle
+Run the command pip3 install pycodestyle
+press Ctrl+Shift+P 
+Type the word linter into the search bar that appears, and click on Python: Select Linter from the filtered results
+Select pycodestyle from the list 
+PEP8 errors appeared underlined in red, as well as being listed in the PROBLEMS tab.
+
+<img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/error4.png">
+
+Error "expected 2 blank lines found 1" i've added additional lines between the colours (def prRed and def prGreen for example) to ensure there is now 2 blank lines.
+Once this change has been made the errors have cleared for that specific comment.
+
+Error "do not use bare except" after googling and reading online i found the way to correct this is by adding additional text after the except value, so i've added ValueError after the except function and after testing the game this has resolved that issue and cleared the error.
+
+Error "over-indented" this was due to the aligning of my functions, specifically the prGreen/Purple/Yellow etc. I've tidied the code up and ensure they are placed in the correct manner and tested out the functions once changes made. This has cleared the error once indented correctly.
+
+I've encountered the below error when first running the game with the python3 run.py command, these were quickly corrected as i found the error to be on the 
+ASCII art battleship, some of the '/' used were recognised as a function instead of it being just an aesthetic reason, so i've personally made changes on the ship to ensure
+this is corrected and ran the game again using the run.py to check that both the game works ok and the ship appears correctly.
+
+<img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/error2.png">
 
 
 
