@@ -99,6 +99,11 @@ letter between A-H required, you provided '5'"
 
 + When the user re-enters the same values they've used before in a prvious turn they will be notified of this and this will not use up a turn. The user is given an option to continue playing and choose a different value or end the game.
 
+<img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/gamewon.png">
+
++ In the event that a user guesses the location of all 8 of the computers battleships, a message will appear and the game will conclude.
+I've increased the count of ships to 8 and also increased the turns to 12 from when i first created the functions for a higher chance for the user to win.
+
 
 # Technologies Used / CREDITS
 
