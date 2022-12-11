@@ -10,6 +10,7 @@ This project is based on the Battleship game which is a game that is very widely
 
 # Table of Contents
 <!-- TOC start -->
+
 - [User Experience)](#ux-user-experience)
   * [Game Goal](#Battle-Ship-game-goals)
 - [How the game works](#How-the-game-works)
@@ -58,6 +59,10 @@ players board if the computer hit a ship on the players board.</li>
 
 + When starting up the game the user will be presented with ASCII art and text showing a battleship with the title above. The user will be advised they have 12 turns and to 
 also input there name to continue.
+
+<img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/hiddenboard.png">
+
++ I've also added a hiddenboard for testing purposes, this shows the location of where all the ships are for the computer. I've used this board to test different functionalities when either hitting or missing there ship. This will be hidden prior submission as the player should not know the answers once the game is released!
 
 <img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/gamestart2.png">
 

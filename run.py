@@ -166,8 +166,8 @@ def main():
 
     create_ships(HIDDEN_BOARD)
     # print hidden board for testing, needs removing before submission
-    print("Hidden Board")
-    print_board(HIDDEN_BOARD)
+    # print("Hidden Board")
+    # print_board(HIDDEN_BOARD)
     
     create_ships(USER_BOARD)
     prRed("""\
