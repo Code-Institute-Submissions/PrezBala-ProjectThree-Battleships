@@ -34,16 +34,16 @@ continue_playing_options = ["y", "yes", "n", "no"]
 def prRed(skk): print(f"{Fore.RED}{skk}{Style.RESET_ALL}")
 
 
-def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
+def prGreen(skk): print(f"{Fore.GREEN}{skk}{Style.RESET_ALL}")
 
 
-def prYellow(skk): print("\033[93m {}\033[00m" .format(skk))
+def prYellow(skk): print(f"{Fore.YELLOW}{skk}{Style.RESET_ALL}")
 
 
-def prPurple(skk): print("\033[95m {}\033[00m" .format(skk))
+def prPurple(skk): print(f"{Fore.PURPLE}{skk}{Style.RESET_ALL}")
 
 
-def prCyan(skk): print("\033[96m {}\033[00m" .format(skk))
+def prCyan(skk): print(f"{Fore.CYAN}{skk}{Style.RESET_ALL}")
 
 
 def print_board(board):
