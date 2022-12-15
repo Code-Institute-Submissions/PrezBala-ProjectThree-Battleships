@@ -1,5 +1,6 @@
 from random import randint
 import random
+from colorama import Fore, Style
 
 # Legend below
 # "@" for placing ship
@@ -30,7 +31,7 @@ continue_playing_options = ["y", "yes", "n", "no"]
 # Python program to print colored text and background
 
 
-def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
+def prRed(skk): print(f"{Fore.RED}{skk}{Style.RESET_ALL}")
 
 
 def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
