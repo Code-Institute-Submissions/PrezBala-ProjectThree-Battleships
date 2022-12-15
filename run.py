@@ -1,5 +1,6 @@
 from random import randint
 import random
+import colorama
 from colorama import Fore, Style
 
 # Legend below
