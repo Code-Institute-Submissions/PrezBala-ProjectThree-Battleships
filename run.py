@@ -40,7 +40,7 @@ def prGreen(skk): print(f"{Fore.GREEN}{skk}{Style.RESET_ALL}")
 def prYellow(skk): print(f"{Fore.YELLOW}{skk}{Style.RESET_ALL}")
 
 
-def prPurple(skk): print(f"{Fore.PURPLE}{skk}{Style.RESET_ALL}")
+def prMagenta(skk): print(f"{Fore.MAGENTA}{skk}{Style.RESET_ALL}")
 
 
 def prCyan(skk): print(f"{Fore.CYAN}{skk}{Style.RESET_ALL}")
@@ -255,7 +255,7 @@ def run_game():
                 "you have sunk all of their battleships!")
             print("The game is now over")
             break
-        prPurple("You have " + str(turns) + " turns remaining")
+        prMagenta("You have " + str(turns) + " turns remaining")
         prYellow(f"{username}'s Score: {user_score}"
                  f" Computer's Score: {computer_score}")
 
