@@ -28,7 +28,7 @@ computer_score = 0
 
 continue_playing_options = ["y", "yes", "n", "no"]
 
-# Python program to print colored text and background
+# Python program to print colored text and background using Colorama import.
 
 
 def prRed(skk): print(f"{Fore.RED}{skk}{Style.RESET_ALL}")
