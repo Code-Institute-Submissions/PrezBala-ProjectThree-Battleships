@@ -17,6 +17,7 @@ This project is based on the Battleship game which is a game that is very widely
 - [Game basics and features](#game-basics-and-features)
 - [Input Validation](#Input-Validation)
 - [Data Model](#Data-Model)
+- [Libraries](#Libraries)
 - [PEP8 pip3 validator](#PEP8-pip3-validator)
 - [Deployment](#Deployment)
 - [Credits and Acknowledgements](#Credit-and-Acknowledgements)
@@ -114,6 +115,17 @@ After every turn the board will update and eventually the game will conclude and
 
 <hr>
 
+# Libraries
+
++ Colorama library was used to generate the colours for the code. [here](https://pypi.org/project/colorama/)
+
+I've decided to use the above library as it was easier and also clearer for the project assessor to see the colour references for example the below image
+shows the prRed using the Colorama library whereas the prGreen was using my previous method which isn't very clear with what exactly the function is doing.
+
+<img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/colorama.png">
+
+<hr>
+
 # PEP8 pip3 validator
 
 Due to pep8online.com being down as advised by my mentor i've used PEP8 validator within Gitpod Workspace, the steps i'vetaken are below.
@@ -139,6 +151,10 @@ ASCII art battleship, some of the '/' used were recognised as a function instead
 this is corrected and ran the game again using the run.py to check that both the game works ok and the ship appears correctly.
 
 <img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/error2.png">
+
+I've also used the Code Institute CI Python Linter validator which came through with no errors.
+
+<img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/linter.png">
 
 <hr>
 
