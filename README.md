@@ -119,6 +119,8 @@ After every turn the board will update and eventually the game will conclude and
 
 + Colorama library was used to generate the colours for the code. [here](https://pypi.org/project/colorama/)
 
+<img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/import.png">
+
 I've decided to use the above library as it was easier and also clearer for the project assessor to see the colour references for example the below image
 shows the prRed using the Colorama library whereas the prGreen was using my previous method which isn't very clear with what exactly the function is doing.
 
@@ -156,6 +158,15 @@ I've also used the Code Institute CI Python Linter validator which came through 
 
 <img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/linter.png">
 
+An error regarding invalid escape sequence with my Battleship ASCII art. I've googled and carried out a few tests and found by adding a 'r' before the '"'  to prCyan(r""") this resolved all errors. This was tested again in Heroku to ensure issue is resolved.
+
+<img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/error8.png">
+
+I've also encountered an issue with the "pip install colorama" function as i found that everytime i started a new workspace it did not retain the library that was installed.
+Though after speaking to Student support i found that this was due to me using new workspaces with every session! so by clearing up my workspaces and placing a 'pin' on my current session i then found the issue to be resolved. 
+
+
+
 <hr>
 
 # Deployment
@@ -175,7 +186,8 @@ I've also used the Code Institute CI Python Linter validator which came through 
 + My mentor Andre Aquilina who guided me in troubleshooting certain errors and providing links to certain articles that aided me in this project.
 + YouTube, codeacademy and knowledge mavens youtube channel to inspire with ideas and how to handle errors and validation, and for generating the board that was used for this game. I watched Mavens video several times and made notes as I was going along to break down each step and make the game my own by adding an additional board for the computer.
 + Python for beginners reddit page that provided several answers to any questions i had and also helped me as i can easily search through any similar queries other people had compared to mine.
-+ Code institue for allowing me to use the template and being able to deploy it on the Heroku App.
++ Code institute for allowing me to use the template and being able to deploy it on the Heroku App.
++ Tutor Support in Code Institute for pointing our my workspace issue and the pip install function.
 + The battleships text in ascii was created using an ascii generator found [here](https://patorjk.com/software/taag/#p=display&f=Doom&t=Battleships)
 + The battleship image in ascii was taken from [here](https://www.asciiart.eu/vehicles/navy)
 
