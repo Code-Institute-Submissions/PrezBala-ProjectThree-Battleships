@@ -1,5 +1,7 @@
+import colorama
+from colorama import Fore, Back, Style
+colorama.init()
 from random import randint
-from colorama import Fore, Style
 
 # Legend below
 # "@" for placing ship

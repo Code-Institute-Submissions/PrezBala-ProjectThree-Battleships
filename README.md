@@ -15,13 +15,13 @@ This project is based on the Battleship game which is a game that is very widely
   * [Game Goal](#Battle-Ship-game-goals)
 - [How the game works](#How-the-game-works)
 - [Game basics and features](#game-basics-and-features)
-- [Game Errors](#Game-Errors)
+- [Input Validation](#Input-Validation)
 - [Data Model](#Data-Model)
 - [PEP8 pip3 validator](#PEP8-pip3-validator)
 - [Deployment](#Deployment)
 - [Credits and Acknowledgements](#Credit-and-Acknowledgements)
-- [Self Improvements](#Self-Improvements)
-  w 
+- [Future Features](#Future-Features)
+  
 <!-- TOC end -->
 <!-- TOC -->
 
@@ -86,7 +86,7 @@ how many turns they have remaining and also the total scores for both the user a
 
 <hr>
 
-# Game Errors 
+# Input Validation
 
 <img src="https://github.com/PrezBala/ProjectThree-Battleships/blob/main/assets/images/bareexceptfix.png">
 
@@ -165,7 +165,7 @@ this is corrected and ran the game again using the run.py to check that both the
 
 <hr>
 
-# Self Improvements
+# Future Features
 
 + Allow the user to make changes to the board size, total number of ships and even place the ships at a location they would like.
 + Increase the size of the ship instead of it being 1x1
