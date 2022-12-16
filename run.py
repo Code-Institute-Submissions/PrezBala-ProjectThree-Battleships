@@ -170,7 +170,7 @@ def main():
     # print hidden board for testing, needs removing before submission
     # print("Hidden Board")
     # print_board(HIDDEN_BOARD)
-    
+
     create_ships(USER_BOARD)
     prRed("""\
 ______       _   _   _           _     _
